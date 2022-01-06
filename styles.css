@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Readex+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #efefef;
+}
+
+#frontEndProjects {
+  display: none;
+}
+
+#jsProjects {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#reflection {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+#copyright {
+  padding: 1rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding-bottom: 0rem;
+}
+
+header .nav-menu {
+  position: fixed;
+  left: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav-menu li {
+  padding: 4rem;
+  list-style-type: none;
+}
+
+header .nav-menu li a {
+  font-family: "Readex Pro", sans-serif;
+  color: #191919;
+  text-decoration: none;
+  padding: 0rem;
+  font-size: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+}
+
+header .nav-menu li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #ea3057;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header .nav-menu li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.hamburger {
+  display: block;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #ea3057;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-family: "Readex Pro", sans-serif;
+  color: #191919;
+}
+
+.hero p {
+  font-family: "Open Sans", sans-serif;
+  color: #ea3057;
+  font-size: 3rem;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem;
+  width: 100%;
+}
+
+.media img {
+  height: 8rem;
+  margin: 2rem;
+}
+
+.media a {
+  font-size: 3rem;
+  padding: 0rem;
+  color: #000000;
+  font-family: "Readex Pro", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+.media a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 50%;
+  position: relative;
+  background: #ea3057;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.media a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+form {
+  padding: 2rem;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-container .reflection-card a {
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+}
+
+.flex-container .reflection-card p {
+  font-size: 1.6rem;
+  color: #191919;
+  padding: 3rem 0 0 0;
+}
+
+.flex-container label {
+  font-size: 2.4rem;
+  font-family: "Readex Pro", sans-serif;
+  padding: 1rem 0 1rem 0;
+}
+
+.flex-container input {
+  height: 4rem;
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 0.2rem solid;
+}
+
+.flex-container input:focus {
+  color: #ea3057;
+  border-color: #ea3057;
+  border-bottom: 0.2rem solid;
+  -webkit-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
+  outline: none;
+}
+
+.flex-container textarea {
+  height: 20rem;
+  width: 80%;
+  margin: auto;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 0.1rem solid;
+  border-left: 0.1rem solid;
+  font-family: "Open Sans", sans-serif;
+  resize: none;
+  padding: 1rem;
+}
+
+.flex-container textarea:focus {
+  border: none;
+  border-bottom: 0.2rem solid;
+  border-left: 0.2rem solid;
+  outline: none;
+  border-color: #ea3057;
+  color: #ea3057;
+}
+
+.flex-container ::-webkit-input-placeholder {
+  color: #ea3057;
+  font-size: 2rem;
+}
+
+.flex-container :-ms-input-placeholder {
+  color: #ea3057;
+  font-size: 2rem;
+}
+
+.flex-container ::-ms-input-placeholder {
+  color: #ea3057;
+  font-size: 2rem;
+}
+
+.flex-container ::placeholder {
+  color: #ea3057;
+  font-size: 2rem;
+}
+
+.flex-container .button {
+  background-color: #ea3057;
+  border-radius: 1rem;
+  border: none;
+  color: #efefef;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 4rem;
+  margin: auto;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  border: solid 0.2rem black;
+}
+
+.flex-container img {
+  height: auto;
+  width: 20rem;
+  margin: auto;
+}
+
+.flex-container .flex-card img {
+  height: auto;
+  width: 90%;
+  padding: 0rem;
+  margin: 5rem 0 5rem 0;
+}
+
+.flex-container .flex-card .testing {
+  width: 50%;
+  margin: auto;
+}
+
+.flex-container .flex-card .testing a {
+  font-size: 3rem;
+  padding: 0rem;
+  color: #000000;
+  font-family: "Readex Pro", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flex-container .flex-card .testing a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.2rem;
+  left: 50%;
+  position: relative;
+  background: #ea3057;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+
+.flex-container .flex-card .testing a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.flex-container h2 {
+  font-size: 5rem;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+}
+
+.flex-container h3 {
+  font-size: 4rem;
+  font-family: "Readex Pro", sans-serif;
+  text-align: center;
+}
+
+.flex-container .description-container {
+  padding: 0 0 8rem 0;
+}
+
+.flex-container p {
+  color: #191919;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  padding: 1rem 2rem 1rem 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  color: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-family: "Readex Pro", sans-serif;
+  padding: 4rem 0 4rem 0;
+  margin: auto;
+}
+
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    width: 60%;
+    margin: auto;
+  }
+  .st0 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 0.2rem solid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  header .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    left: 0;
+    flex-direction: row;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .nav-menu li {
+    padding: 2rem;
+    list-style: none;
+  }
+  header .nav-menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: "Readex Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .bar {
+    display: none;
+  }
+  form {
+    width: 60%;
+    margin: auto;
+  }
+  .hero {
+    padding: 5rem 0 5rem 0;
+    height: 70vh;
+  }
+  .media {
+    padding: 5rem 0 5rem 0;
+  }
+  footer {
+    width: 100%;
+    color: "Open Sans", sans-serif;
+    font-size: 4rem;
+    font-family: "Readex Pro", sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

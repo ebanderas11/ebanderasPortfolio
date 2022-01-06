@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ernesto Banderas</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- <a href="#" id="homeReset"><img class="imageSVG" src="/resources/firstLogo.svg" alt=""></a> -->
+        <a href="#" id="homeReset">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="220 320 130 200" height="120"
+                width="110" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+
+                <g>
+                    <g>
+                        <path
+                            d="M286.99,425.27v-60.99h51.77v-15.57h-66.86v92.12h68.24v-15.57H286.99z M290.57,398.9v0.18h12.26v-0.18H290.57z" />
+                        <path d="M290.57,398.9v0.18h12.26v-0.18H290.57z" />
+                        <path d="M335.86,405.46c0,3.6-0.84,6.59-2.53,9c-1.68,2.42-4.01,4.22-6.97,5.42c-2.97,1.21-6.43,1.81-10.39,1.81h-25.41v-19.21
+			h12.26v8.75h12.67c2.41,0,4.28-0.54,5.62-1.62c1.34-1.08,2-2.64,2-4.69c0-1.9-0.7-3.35-2.12-4.35c-1.42-1-3.39-1.5-5.89-1.5
+			h-12.27v-0.18h-12.26v-9.36h22.93c2.13,0,3.8-0.51,5.01-1.54c1.2-1.02,1.8-2.38,1.8-4.07c0-1.74-0.61-3.11-1.84-4.12
+			c-1.24-1-3.08-1.5-5.53-1.5h-10.11v7.64h-12.26v-18.1h24.61c5.72,0,10.1,1.17,13.15,3.5c3.04,2.33,4.56,5.6,4.56,9.8
+			c0,5.34-2.3,9.02-6.89,11.07c2.99,1.13,5.39,2.82,7.18,5.08C334.97,399.57,335.86,402.29,335.86,405.46z" />
+                        <rect x="290.57" y="398.9" width="12.26" height="0.18" />
+                    </g>
+                    <circle class="st0" cx="306.01" cy="395.51" r="66.67" />
+                </g>
+            </svg>
+        </a>
+        <nav>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item nav-link"><a href="#" id="aboutLink" onclick="show('about');">About</a></li>
+                <li class="nav-item nav-link"><a href="#" id="jsLink" onclick="show('jsProjects');">JS Projects</a></li>
+                <li class="nav-item nav-link"><a href="#" id="frontEndLink" onclick="show('frontEndProjects');">HTML/CSS
+                        Projects</a></li>
+                <li class="nav-item nav-link"><a href="#" id="reflectionLink"
+                        onclick="show('reflection');">Reflections</a></li>
+                <li class="nav-item nav-link"><a href="#" id="contactLink" onclick="show('contact');">Contact</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+            <h1>Hi, I'm Ernesto Banderas</h1>
+            <p>I am a freelance Web Developer and Coffee Enthusiast based in Los Angeles.</p>
+
+
+            <div id="media" class="media">
+                <abbr title="Instagram">
+                    <a href="https://www.instagram.com/coffeepapi__" target="_blank"><img src="resources/instagram.png"
+                            alt=""></a>
+                </abbr>
+                <abbr title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ernesto-banderas-45910820a/" target="_blank"><img
+                            src="resources/linkedin.png" alt=""></a>
+                </abbr>
+                <abbr title="Github">
+                    <a href="https://github.com/ebanderas11" target="_blank"><img
+                            src="resources/github-logo-silhouette-in-a-square.png" alt=""></a>
+                </abbr>
+            </div>
+        </section>
+
+
+        <section id="about" class="flex-container about">
+            <h2>About</h2>
+            <img src="resources/coding.png" alt="">
+            <div class="description-container">
+                <p>
+                    Hello, my name is Ernesto Banderas - a self taught font-end developer from and based in Los Angeles,
+                    California.
+                    I have been working with HTML, CSS, and JS for the past year mainly focusing on building Web Sites
+                    for small clients.
+                    I am currently attending Long Beach City College while I get my A.S. in Web Development.
+                </p>
+                <p>
+                    When I am not working on Web Dev projects you can find me messing with coffee, collecting cards, or
+                    playing video games.
+                    Feel free to reach out if you'd like to work with me or get to know more about me.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="reflection" class="flex-container">
+            <h2>Reflections</h2>
+
+            <div class="reflection-card">
+                <h3>User Experience</h3>
+                <p> One of the most important topics we covered in our Front End Web Dev class is User Experience.
+                    The way users interact with the website and how easy it is to use overall will ultimately determine
+                    if
+                    you website will be succesful in retaining users or drive them away.
+                </p>
+                <p>
+                    It is important to consider all users when creating your website, but I believe it is more important
+                    to
+                    find the audience you are catering to and design a website based off of that. Of course I want my
+                    site to be
+                    accessable by all, but at the end of the day it is my target audience that will decide if they will
+                    use the site
+                    or not.
+                </p>
+
+                <p>
+                    It is important to look up your user demographic and understand user habits. This way you can plan
+                    ahead
+                    and build accordingly.
+                    It is easy to do the research in the beginning as opposed to after your site is published.
+                </p>
+
+
+            </div>
+            <div class="reflection-card">
+                <h3>Responsive Design</h3>
+                <p>
+                    Today most of use our phones for daily tasks that we would normally do on a computer. Most website
+                    users today access
+                    websites from their phones. That's why it is especially important to make sure your website is
+                    mobile responsive.
+                </p>
+                <p>
+                    Personally, I like to build my websites with a mobile first approach. I build everything out
+                    starting off with how
+                    it will look on a mobile device. Once the site looks good on mobile, I start to scale the site to
+                    bigger screen sizes
+                    such as tablets or computer monitors.
+                </p>
+                <p>
+                    A mobile responsive site can be achieved using tools such as flex-box and media queries. I like to
+                    combine
+                    the two to create clean and responsive sites.
+                </p>
+
+            </div>
+
+
+
+        </section>
+
+        <section id="frontEndProjects" class="flex-container projects">
+            <h2>Front End</h2>
+            <!-- <div class="flex-card">
+                <a href="https://codepen.io/eband11/pen/xxrjQmW">Satoshi Tajiri Tribute Page</a>
+                <img src="resources/frontEndproject1.png" alt="">
+                <div class="description-container">
+                    <p>This was the first tribute page for our Intro to Front End class. It serves great starter project
+                        for
+                        those learning the front end side of web development. I used a simple design to keep things
+                        clean
+                        and easy to read. The page focuses on Satoshi Tajiri, the creator of Pokemon.
+                    </p>
+                    <p>
+                        If I could redo this page, I would certainly add more details about Satoshi's life and more user
+                        interaction.
+                        As it is now, it kind of just reminds me of a wiki page, so it could defenitely use more work.
+                        The idea behind
+                        this page was to just make something super simple and responsive.
+                    </p>
+                </div>
+            </div> -->
+
+            <div class="flex-card">
+                <div class="testing"><a href="https://codepen.io/eband11/full/GRvREev" target="_blank">Slayer Product Page</a></div>
+                <img src="resources/frontEndProject2.png" alt="">
+                <div class="description-container">
+                    <p>This project focuses on creating a landing page for a specific product. I recreated the Slayer
+                        Espresso
+                        Machine web page. It was goood practice using flex box and the css box model. I mainly focused
+                        on
+                        keeping the design simple and easy to use. All information is easil legible and navigation is
+                        layed out
+                        cleanly.
+                    </p>
+                    <p>
+                        The only issue I had with this page was that I did not add a landscape mode for my media
+                        queries. I should
+                        have started out with a mobile first approach and then scaled the site to bigger screens.
+                    </p>
+                </div>
+            </div>
+
+
+                <div class="flex-card">
+                    <div class="testing"><a href="https://codepen.io/eband11/full/LYjvQVO">Technical Documentation Page for React</a></div>
+                    <img src="resources/frontEndProject4.png" alt="">
+                    <div class="description-container">
+                        <p>
+                            Using repl.it we modified JSON and used AJAX to create a single page application that
+                            basically
+                            updates on the same page. Whenever you click for more info to come up, the info is added to
+                            the current page
+                            instead of having a new page open for the specific info. It also allows for the page to be
+                            more compressed and
+                            have less clutter.
+                        </p>
+                        <p>
+                            Overall this was a good introduction to JSON/AJAX. It helped understand why using JS and
+                            JSON together
+                            is so useful.
+                        </p>
+
+                    </div>
+
+
+
+        </section>
+
+        <section id="jsProjects" class="flex-container projects">
+            <h2>JS Projects</h2>
+
+            <div class="flex-card">
+                <div class="testing"><a href="https://codepen.io/eband11/full/QWMeRrY">React Test</a></div>
+                
+                <img src="resources/jsReactPage.png" alt="">
+                <div class="description-container">
+                    <p>This project was built using the very basics of React on codepen. It is meant to show how JSX and
+                        React
+                        work. React is simple, straight forward, and quick. Using React I built a SPA with some simple
+                        navigation
+                        between pages. The project does not show the full power of React, but it simply shows how you
+                        could create
+                        small bits of reusable code, such as the code for the navigation and footer.
+                    </p>
+                    <p>
+                        Overall this project helped me undertsand some of the basics of React and provided good practice
+                        with
+                        a popular framework.
+                    </p>
+                </div>
+            </div>
+
+
+           <!--  <div class="flex-card">
+                <a href="https://codepen.io/eband11/pen/bGRvOOa?editors=0012">Functions Project</a>
+                <img src="resources/jsHW2.jpg" alt="">
+                <div class="description-container">
+                    <p>This project minaly focused on using functions to help with creating a user interactive text
+                        based game. My game
+                        focused on a Pokemon adventure where you pick your Pokemon and destination. Once you pick a
+                        destination you encounter
+                        an enemy Pokemon. Here a randomizing function is used to flip a coin and decide whether your
+                        attacks land or not. A function
+                        divides your wins and losses by 3 and if your attacks landed more than 1/3rd of the times you
+                        attacked, you win.
+                    </p>
+                    <p>
+                        Overall this project was a fun introduction to functions and adding user interactiveness to
+                        sites or creating simple games.
+                        If I could keep working on this project, I would surely add more functions, interactions, and
+                        animations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-card">
+                <a href="https://codepen.io/eband11/pen/oNwOOdK?editors=1111">Mars Project JS</a>
+                <img src="resources/jsHW3.jpg" alt="">
+                <div class="description-container">
+                    <p>The Human Lottery/ Mission to Mars project focused around learning and using String and Arrays.
+                        We
+                        had to use array methods to take user input and then modify that input to output a modified
+                        list. We
+                        also had to randomize the amount of times the program went through the array and picked a random
+                        person
+                        each time. This project really helped with learning the basics of strings and arrays.
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+            </div> -->
+
+            <div class="flex-card">
+                <div class="testing"><a href="https://codepen.io/eband11/full/ExXzXbW">Character Generator</a></div>
+                <img src="resources/jsHW4.png" alt="">
+                <div class="description-container">
+                    <p>Using JS I built a simple Character Generator. My Character Generator focuses on creating a
+                        character from
+                        the Narutoverse. It simply takes the user's name as input and then randomly generates different
+                        aspects of your
+                        character. Finally the JS outputs onto the HTML everything that will be displayed on the page.
+                        It creates your character
+                        and a random enemy character and then gives them both stats and attributes. Once everything is
+                        displayed on the page
+                        you could see which one of the characters has better stats.
+                    </p>
+                    <p>
+                        This project helped with understanding arrays, functions, prototype functions and object
+                        contructors.
+                    </p>
+
+                </div>
+
+
+                <div class="flex-card">
+                   <div class="testing"><a href="https://cosw200-js-hw6-ajaxjson.ebanderas.repl.co/">AJAX/JSON</a></div>
+                    <img src="resources/jsHW6.png" alt="">
+                    <div class="description-container">
+                        <p>
+                            Using repl.it we modified JSON and used AJAX to create a single page application that
+                            basically
+                            updates on the same page. Whenever you click for more info to come up, the info is added to
+                            the current page
+                            instead of having a new page open for the specific info. It also allows for the page to be
+                            more compressed and
+                            have less clutter.
+                        </p>
+                        <p>
+                            Overall this was a good introduction to JSON/AJAX. It helped understand why using JS and
+                            JSON together
+                            is so useful.
+                        </p>
+
+                    </div>
+
+                    <!-- <div class="flex-card">
+                        <a href="https://replit.com/@ebanderas/JSValidate-1#script.js">User Input Validation</a>
+                        <img src="resources/jsHW7.png" alt="">
+                        <div class="description-container">
+                            <p>
+                                This project allowed us to use JS to validate user input. We modified a form using JS in
+                                order to
+                                have it validate user input such as user name, passwords, email, and a short bio. It was
+                                useful because
+                                it showed how JS can be used as a backend tool to help with forms such as this.
+                            </p>
+
+                        </div> -->
+
+        </section>
+
+
+        <form id="contact" class="flex-container" onsubmit="return false">
+
+            <h2>CONTACT</h2>
+            <label>First Name:</label>
+            <input placeholder="first name" type="text" id="firstName" required>
+
+            <label>Last Name:</label>
+            <input placeholder="last name" type="text" id="lastName" required>
+
+            <label>Email:</label>
+            <input placeholder="Enter your email" type="email" id="email" required>
+
+            <label>Message:</label>
+            <textarea placeholder="Hit me up" name="question" id="question" required></textarea>
+
+            <button class="button" onclick="submitFunc()">Submit</button>
+        </form>
+
+    </main>
+
+
+    <footer>
+        &copy;
+        <span id="copyright">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        <p>Ernesto Banderas</p>
+    </footer>
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Readex+Pro&display=swap");
+
+$font-primary: "Readex Pro", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+$header1: 6rem;
+$header2: 5rem;
+$header3: 4rem;
+$labels: 2.4rem;
+$paragraph: 3rem;
+$paragraphSmall: 2.5rem;
+$paragraphSmallest: 2rem;
+$reflectionFont: 1.6rem;
+$navlink: 3rem;
+$navlinkSmaller: 2rem;
+$colorBackground: #efefef;
+$colorPrimaryFont: #191919;
+$colorSecondaryFont: #ea3057;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: $colorBackground;
+}
+
+#frontEndProjects {
+    display: none;
+}
+#jsProjects {
+    display: none;
+}
+
+#about {
+    display: none;
+}
+
+#reflection {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
+#copyright{
+    padding: 1rem;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 0rem;
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+
+        transition: 0.3s;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        justify-content: center;
+
+        li {
+            padding: 4rem;
+            list-style-type: none;
+
+            a {
+                font-family: $font-primary;
+                color: $colorPrimaryFont;
+                text-decoration: none;
+                padding: 0rem;
+                font-size: $navlinkSmaller;
+                flex-direction: row;
+                text-transform: uppercase;
+            }
+            a:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: relative;
+                background: $colorSecondaryFont;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+
+            a:hover:after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+.hamburger {
+    display: block;
+    padding: 2rem;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: $colorSecondaryFont;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1rem;
+
+    h1 {
+        font-size: $header1;
+        font-family: $font-primary;
+        color: $colorPrimaryFont;
+    }
+
+    p {
+        font-family: $font-secondary;
+        color: $colorSecondaryFont;
+        font-size: $paragraph;
+    }
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    width: 100%;
+
+    img {
+        height: 8rem;
+        margin: 2rem;
+    }
+    a {
+        font-size: 3rem;
+        padding: 0rem;
+        color: #000000;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+    }
+    a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 0.2rem;
+        left: 50%;
+        position: relative;
+        background: $colorSecondaryFont;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+form {
+    padding: 2rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    height: 100%;
+
+  
+    .reflection-card {
+       
+        a {
+            font-weight: normal;
+            text-decoration: none;
+            margin: 0;
+        }
+        p {
+            font-size: $reflectionFont;
+            color: $colorPrimaryFont;
+            //    margin: 0 .5rem 0 .5rem;
+            padding: 3rem 0 0 0;
+        }
+    }
+    label {
+        font-size: $labels;
+        font-family: $font-primary;
+        padding: 1rem 0 1rem 0;
+    }
+
+    input {
+        height: 4rem;
+        width: 80%;
+        margin: auto;
+        font-size: $paragraphSmallest;
+
+        border: none;
+        border-bottom: 0.2rem solid;
+    }
+
+    input:focus {
+        color: $colorSecondaryFont;
+        border-color: $colorSecondaryFont;
+        border-bottom: 0.2rem solid;
+        transition: ease-in 0.1s;
+        outline: none;
+    }
+
+    textarea {
+        height: 20rem;
+        width: 80%;
+        margin: auto;
+        font-size: $paragraphSmallest;
+        border: none;
+        border-bottom: 0.1rem solid;
+        border-left: 0.1rem solid;
+        // border-radius: 1rem;
+        font-family: $font-secondary;
+        resize: none;
+        padding: 1rem;
+    }
+
+    textarea:focus {
+        border: none;
+        border-bottom: 0.2rem solid;
+        border-left: 0.2rem solid;
+        outline: none;
+        border-color: $colorSecondaryFont;
+        color: $colorSecondaryFont;
+    }
+
+    ::placeholder {
+        color: $colorSecondaryFont;
+        font-size: $paragraphSmallest;
+    }
+
+    .button {
+        background-color: $colorSecondaryFont;
+        border-radius: 1rem;
+        border: none;
+        color: #efefef;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 4rem;
+        margin: auto;
+        cursor: pointer;
+        font-size: $paragraphSmall;
+        margin-top: 1rem;
+        border: solid 0.2rem black;
+    }
+
+    img {
+        height: auto;
+        width: 20rem;
+        margin: auto;
+    }
+    .flex-card {
+        img {
+            height: auto;
+            width: 90%;
+            padding: 0rem;
+            margin: 5rem 0 5rem 0;
+        }
+        .testing {
+            width: 50%;
+            margin: auto;
+
+            a {
+                font-size: 3rem;
+                padding: 0rem;
+                color: #000000;
+                font-family: $font-primary;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0.15em;
+
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+            }
+            a:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 0.2rem;
+                left: 50%;
+                position: relative;
+                background: $colorSecondaryFont;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0%;
+            }
+
+            a:hover:after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    h2 {
+        font-size: $header2;
+        font-family: $font-primary;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: $header3;
+        font-family: $font-primary;
+        text-align: center;
+    }
+    .description-container {
+        padding: 0 0 8rem 0;
+    }
+    p {
+        color: $colorPrimaryFont;
+        font-size: $paragraphSmall;
+        font-family: $font-secondary;
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        padding: 1rem 2rem 1rem 2rem;
+        line-height: 4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    // a {
+    //     font-family: $font-secondary;
+    //     font-size: $paragraph;
+    //     color: $colorPrimaryFont;
+    //     text-decoration: none;
+    //     text-align: center;
+    //     font-weight: bold;
+    // }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+    color: $font-secondary;
+    font-size: $paragraph;
+    font-family: $font-primary;
+
+    padding: 4rem 0 4rem 0;
+    margin: auto;
+}
+.st0 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+@media only screen and (min-width: 1300px) {
+    body {
+        width: 60%;
+        margin: auto;
+    }
+    .st0 {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 3;
+        stroke-miterlimit: 10;
+    }
+    header {
+        display: flex;
+        border: 0.2rem solid;
+        justify-content: space-around;
+        align-items: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 0;
+
+        .nav-menu {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            left: 0;
+
+            flex-direction: row;
+
+            transition: 0.3s;
+
+            li {
+                padding: 2rem;
+                list-style: none;
+
+                a {
+                    color: #000000;
+                    text-decoration: none;
+
+                    font-size: 2rem;
+                    flex-direction: row;
+                    font-family: $font-primary;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .bar {
+        display: none;
+    }
+
+    form {
+        width: 60%;
+        margin: auto;
+    }
+
+    .hero {
+        padding: 5rem 0 5rem 0;
+        height: 70vh;
+    }
+
+    .media {
+        padding: 5rem 0 5rem 0;
+    }
+
+    footer {
+        width: 100%;
+
+        color: $font-secondary;
+        font-size: $header3;
+        font-family: $font-primary;
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: 0;
+        margin-top: auto;
+
+    }
+}
